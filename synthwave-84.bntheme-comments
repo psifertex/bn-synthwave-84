@@ -1,0 +1,155 @@
+{
+  "name": "Synthwave '84",
+  "style": "Fusion",
+  "colors": {
+    // Base palette derived from SynthWave '84
+    "black": [0, 0, 0],
+    "background": [38, 35, 53],       // #262335 - Editor background&#8203;:contentReference[oaicite:37]{index=37}
+    "darkPurple": [42, 33, 57],      // #2a2139 - Slightly lighter purple (UI elements)&#8203;:contentReference[oaicite:38]{index=38}
+    "white": [255, 255, 255],        // #ffffff - Foreground text&#8203;:contentReference[oaicite:39]{index=39}
+    "commentPurple": [132, 139, 189],// #848bbd - Comments/hints&#8203;:contentReference[oaicite:40]{index=40}
+    "stringOrange": [255, 139, 57],  // #ff8b39 - Strings&#8203;:contentReference[oaicite:41]{index=41}
+    "keywordYellow": [254, 222, 93], // #fede5d - Keywords/opcodes&#8203;:contentReference[oaicite:42]{index=42}
+    "variablePink": [255, 126, 219], // #ff7edb - Variables (local)&#8203;:contentReference[oaicite:43]{index=43}
+    "brightRed": [254, 68, 80],      // #fe4450 - Registers, errors, types&#8203;:contentReference[oaicite:44]{index=44}
+    "constantOrange": [249, 126, 114],// #f97e72 - Constants & data literals&#8203;:contentReference[oaicite:45]{index=45}
+    "functionCyan": [54, 249, 246],  // #36f9f6 - Function names/calls&#8203;:contentReference[oaicite:46]{index=46}
+    "numberBlue": [46, 226, 250],    // #2ee2fa - Numeric literals&#8203;:contentReference[oaicite:47]{index=47}
+    "seafoamGreen": [114, 241, 184], // #72f1b8 - Imports, accents&#8203;:contentReference[oaicite:48]{index=48}
+    "lightPurple": [157, 139, 202],  // #9d8bca - Light lavender (annotations, glow)
+    "grey": [182, 177, 177]         // #b6b1b1 - Neutral grey (addresses, outlines)
+  },
+  "palette": {
+    "Window": "background",              // Main window background
+    "WindowText": "white",               // Main window text
+    "Base": "background",                // Base background for text views (same as main bg for uniform look)
+    "AlternateBase": ["~", "background", "white", 20], 
+    /* Alternate base: slightly lighter than background (mix in a bit of white for alternating row backgrounds) */
+    "ToolTipBase": "darkPurple",         // Tooltip background
+    "ToolTipText": "white",              // Tooltip text
+    "Text": "white",                     // Generic text color
+    "Button": "darkPurple",              // Button background
+    "ButtonText": "white",               // Button text (white on purple button)
+    "BrightText": "white",               // Bright text (for e.g. highlighted text on dark)
+    "Link": "seafoamGreen",              // Hyperlink color (bright green accent)
+    "Highlight": ["~", "background", "white", 80],
+    /* Selection highlight color (e.g. selected text in input fields): 
+       a translucent white overlay on dark background */
+    "HighlightedText": "background",     // Text color when highlighted (dark text on light highlight if any)
+    "Light": "seafoamGreen"             // Light element (used by Qt Fusion for edges, etc., use accent green)
+  },
+  "theme-colors": {
+    /* Tokens (disassembly/decompiler syntax) */
+    "addressColor": "grey",             // Address tokens in listing (neutral grey)&#8203;:contentReference[oaicite:49]{index=49}
+    "registerColor": "brightRed",       // CPU registers (bright neon red)&#8203;:contentReference[oaicite:50]{index=50}
+    "numberColor": "numberBlue",        // Numeric literals (bright cyan-blue)&#8203;:contentReference[oaicite:51]{index=51}
+    "codeSymbolColor": "functionCyan",  // Code symbol (function names) (neon cyan)&#8203;:contentReference[oaicite:52]{index=52}
+    "dataSymbolColor": "constantOrange",// Data symbol (global var/const) (orange)&#8203;:contentReference[oaicite:53]{index=53}
+    "stackVariableColor": "variablePink",// Stack variables (hot pink)&#8203;:contentReference[oaicite:54]{index=54}
+    "importColor": "seafoamGreen",      // Imported function names (seafoam green)&#8203;:contentReference[oaicite:55]{index=55}
+    "annotationColor": "lightPurple",   // Annotations/hints (lavender)
+    "commentColor": "commentPurple",    // User comments (grayish purple)&#8203;:contentReference[oaicite:56]{index=56}
+    "opcodeColor": "keywordYellow",     // Instruction opcodes (mnemonics) (yellow)&#8203;:contentReference[oaicite:57]{index=57}
+    "stringColor": "stringOrange",      // String literals (bright orange)&#8203;:contentReference[oaicite:58]{index=58}
+    "typeNameColor": "brightRed",       // Type names (structs, etc.) (red)&#8203;:contentReference[oaicite:59]{index=59}
+    "fieldNameColor": "white",          // Structure field names (white for now, could also use another accent)
+    "keywordColor": "keywordYellow",    // HLIL keywords (e.g. if, for) (yellow)&#8203;:contentReference[oaicite:60]{index=60}
+    "uncertainColor": "variablePink",   // Uncertain types (pink, same as variable to mark unsure info)
+    /* Hex view and memory */
+    "modifiedColor": "brightRed",       // Modified bytes in hex (red for changes)
+    "insertedColor": "seafoamGreen",    // Inserted bytes (green)
+    "notPresentColor": "commentPurple", // Not-present bytes (faded purple)
+    "alphanumericHighlightColor": "keywordYellow",
+    "blueStandardHighlightColor": "numberBlue",
+    "greenStandardHighlightColor": "seafoamGreen",
+    "orangeStandardHighlightColor": "constantOrange",
+    "redStandardHighlightColor": "brightRed",
+    "cyanStandardHighlightColor": "functionCyan",
+    "magentaStandardHighlightColor": "variablePink",
+    "yellowStandardHighlightColor": "keywordYellow",
+    "whiteStandardHighlightColor": "white",
+    "blackStandardHighlightColor": "black",
+    "printableHighlightColor": "stringOrange",
+    "graphNodeShadowColor": "black",
+    "featureMapDataVariableHighlightColor": "white",
+    "featureMapAsciiStringHighlightColor": "white",
+    "featureMapUnicodeStringHighlightColor": "white",
+    "featureMapFunctionHighlightColor": "white",
+    "featureMapImportHighlightColor": "white",
+    "featureMapExternHighlightColor": "white",
+    "featureMapLibraryHighlightColor": "white",
+    "backgroundHighlightDarkColor": ["~", "background", "white", 20],
+    "backgroundHighlightLightColor": ["~", "background", "white", 100],
+    /* ^ For Contrast mode: 0x00 bytes (DarkColor) and 0xFF bytes (LightColor) backgrounds. 
+         We use slight lightening of base for 0x00 and a bit more for 0xFF. */
+    "boldBackgroundHighlightDarkColor": ["~", "background", "white", 60],
+    "boldBackgroundHighlightLightColor": ["~", "background", "white", 150],
+    /* ^ For high contrast mode highlighting of 0x00/0xFF (a stronger highlight). */
+    "selectionColor": ["~", "background", "white", 50],
+    // Background of bytes selected via drag (a translucent light highlight)&#8203;:contentReference[oaicite:61]{index=61}
+    "outlineColor": "seafoamGreen",    // Outline color for selection (using green accent)
+    /* Linear disassembly view backgrounds */
+    "linearDisassemblyFunctionHeaderColor": "darkPurple", // Function header block background
+    "linearDisassemblyBlockColor": "background",    // Normal block background
+    "linearDisassemblyNoteColor": "background",     // Note block background (use same as normal for consistency)
+    "linearDisassemblySeparatorColor": "darkPurple",// Separator line color (purple line between blocks)
+    /* Graph view */
+    "graphBackgroundDarkColor": "background",
+    "graphBackgroundLightColor": "darkPurple",
+    /* ^ Graph background gradient – two dark purples for a subtle gradient :contentReference[oaicite:62]{index=62}*/
+    "graphNodeDarkColor": "darkPurple",
+    "graphNodeLightColor": [52, 41, 79],
+    /* ^ Graph nodes gradient – slightly lighter top (#34294f) to dark bottom, to stand out from background */
+    "graphNodeOutlineColor": "grey",   // Node outline (grey border around graph nodes)
+    "trueBranchColor": "seafoamGreen", // True branch arrow (green = true)
+    "falseBranchColor": "brightRed",   // False branch arrow (red = false)
+    "unconditionalBranchColor": "functionCyan", // Unconditional branch (cyan)
+    "altTrueBranchColor": "variablePink",       // Alternate true branch (pink)
+    "altFalseBranchColor": "stringOrange",      // Alternate false branch (orange)
+    "altUnconditionalBranchColor": "keywordYellow", // Alternate unconditional (yellow)
+    /* Highlights */
+    "tokenHighlightColor": ["+", "background", "variablePink"],
+    /* Background for a selected token (average of base and pink = dim purple highlight box) */
+    "instructionHighlightColor": [ "+", "background", "darkPurple" ],
+    /* Background for selected instruction line (avg of two dark purples for subtle highlight) */
+    "relatedInstructionHighlightColor": ["~", "background", "seafoamGreen", 100],
+    /* Background for related instructions (e.g. next instruction after a branch). 
+       We use a mix adding some green for a slight teal highlight. */
+    /* Feature Map (binary overview) */
+    "featureMapBaseColor": "background",          // Feature map background
+    "featureMapNavLineColor": "white",            // Current view indicator line (white cursor line)
+    "featureMapNavHighlightColor": "variablePink",// Glow around current line (pink)
+    "featureMapDataVariableColor": "constantOrange", // Regions with data variables (orange)
+    "featureMapAsciiStringColor": "stringOrange",    // Regions with ASCII strings (orange)
+    "featureMapUnicodeStringColor": "variablePink",  // Regions with Unicode strings (pink)
+    "featureMapFunctionColor": "functionCyan",    // Regions with functions (code) (cyan)
+    "featureMapImportColor": "seafoamGreen",      // Regions with imported code (green)
+    "featureMapExternColor": "keywordYellow",     // Regions with extern symbols (yellow)
+    "featureMapLibraryColor": "lightPurple",      // Regions with library functions (lavender)
+    /* Side Bar */
+    "sidebarBackgroundColor": "darkPurple",       // Sidebar panels background
+    "sidebarInactiveIconColor": "commentPurple",  // Inactive icons (faded purple)
+    "sidebarActiveIconColor": "white",            // Active icon (white)
+    "sidebarHeaderBackgroundColor": "background", // Sidebar header strip (darker purple)
+    "sidebarHeaderTextColor": "white",            // Sidebar header text (white)
+    "sidebarWidgetBackgroundColor": "darkPurple", // Sidebar widgets (e.g. filter box background)
+    /* Mini Graph */
+    "miniGraphOverlayColor": ["~", "background", "white", 100],
+    // Highlight of current view in mini-graph (semi-transparent light overlay)
+    /* Script Console */
+    "scriptConsoleOutputColor": "white",          // Console output text (white)
+    "scriptConsoleWarningColor": "keywordYellow", // Console warnings (yellow)
+    "scriptConsoleErrorColor": "brightRed",       // Console errors (red)
+    "scriptConsoleEchoColor": "seafoamGreen",     // Console input echo (green)
+    /* Panes (multiple views) */
+    "activePaneBackgroundColor": "background", 
+    "inactivePaneBackgroundColor": [28, 25, 43],
+    /* ^ Inactive pane is slightly darker than active (mix in a bit of black) */
+    /* Status Bar */
+    "statusBarServerConnectedColor": "seafoamGreen", // Connected status (green)
+    "statusBarServerDisconnectedColor": "brightRed", // Disconnected status (red)
+    "statusBarServerWarningColor": "keywordYellow",  // Warning status (yellow)
+    "statusBarProjectColor": "variablePink"          // Project open indicator (pink)
+  }
+}
+

@@ -1,0 +1,248 @@
+{
+  "name": "Synthwave '84",
+  "style": "Fusion",
+  "colors": {
+    "black": [
+      0,
+      0,
+      0
+    ],
+    "background": [
+      38,
+      35,
+      53
+    ],
+    "darkPurple": [
+      42,
+      33,
+      57
+    ],
+    "white": [
+      255,
+      255,
+      255
+    ],
+    "commentPurple": [
+      132,
+      139,
+      189
+    ],
+    "stringOrange": [
+      255,
+      139,
+      57
+    ],
+    "keywordYellow": [
+      254,
+      222,
+      93
+    ],
+    "variablePink": [
+      255,
+      126,
+      219
+    ],
+    "brightRed": [
+      254,
+      68,
+      80
+    ],
+    "constantOrange": [
+      249,
+      126,
+      114
+    ],
+    "functionCyan": [
+      54,
+      249,
+      246
+    ],
+    "numberBlue": [
+      46,
+      226,
+      250
+    ],
+    "seafoamGreen": [
+      114,
+      241,
+      184
+    ],
+    "lightPurple": [
+      157,
+      139,
+      202
+    ],
+    "grey": [
+      182,
+      177,
+      177
+    ]
+  },
+  "palette": {
+    "Window": "background",
+    "WindowText": "white",
+    "Base": "background",
+    "AlternateBase": [
+      "~",
+      "background",
+      "white",
+      20
+    ],
+    "ToolTipBase": "darkPurple",
+    "ToolTipText": "white",
+    "Text": "white",
+    "Button": "darkPurple",
+    "ButtonText": "white",
+    "BrightText": "white",
+    "Link": "seafoamGreen",
+    "Highlight": [
+      "~",
+      "background",
+      "white",
+      80
+    ],
+    "HighlightedText": "background",
+    "Light": "seafoamGreen"
+  },
+  "theme-colors": {
+    "addressColor": "grey",
+    "registerColor": "brightRed",
+    "numberColor": "numberBlue",
+    "codeSymbolColor": "functionCyan",
+    "dataSymbolColor": "constantOrange",
+    "stackVariableColor": "variablePink",
+    "importColor": "seafoamGreen",
+    "annotationColor": "lightPurple",
+    "commentColor": "commentPurple",
+    "opcodeColor": "keywordYellow",
+    "stringColor": "stringOrange",
+    "typeNameColor": "brightRed",
+    "fieldNameColor": "white",
+    "keywordColor": "keywordYellow",
+    "uncertainColor": "variablePink",
+    "modifiedColor": "brightRed",
+    "insertedColor": "seafoamGreen",
+    "notPresentColor": "commentPurple",
+    "alphanumericHighlightColor": "keywordYellow",
+    "blueStandardHighlightColor": "numberBlue",
+    "greenStandardHighlightColor": "seafoamGreen",
+    "orangeStandardHighlightColor": "constantOrange",
+    "redStandardHighlightColor": "brightRed",
+    "cyanStandardHighlightColor": "functionCyan",
+    "magentaStandardHighlightColor": "variablePink",
+    "yellowStandardHighlightColor": "keywordYellow",
+    "whiteStandardHighlightColor": "white",
+    "blackStandardHighlightColor": "black",
+    "printableHighlightColor": "stringOrange",
+    "graphNodeShadowColor": "black",
+    "featureMapDataVariableHighlightColor": "white",
+    "featureMapAsciiStringHighlightColor": "white",
+    "featureMapUnicodeStringHighlightColor": "white",
+    "featureMapFunctionHighlightColor": "white",
+    "featureMapImportHighlightColor": "white",
+    "featureMapExternHighlightColor": "white",
+    "featureMapLibraryHighlightColor": "white",
+    "backgroundHighlightDarkColor": [
+      "~",
+      "background",
+      "white",
+      20
+    ],
+    "backgroundHighlightLightColor": [
+      "~",
+      "background",
+      "white",
+      100
+    ],
+    "boldBackgroundHighlightDarkColor": [
+      "~",
+      "background",
+      "white",
+      60
+    ],
+    "boldBackgroundHighlightLightColor": [
+      "~",
+      "background",
+      "white",
+      150
+    ],
+    "selectionColor": [
+      "~",
+      "background",
+      "white",
+      50
+    ],
+    "outlineColor": "seafoamGreen",
+    "linearDisassemblyFunctionHeaderColor": "darkPurple",
+    "linearDisassemblyBlockColor": "background",
+    "linearDisassemblyNoteColor": "background",
+    "linearDisassemblySeparatorColor": "darkPurple",
+    "graphBackgroundDarkColor": "background",
+    "graphBackgroundLightColor": "darkPurple",
+    "graphNodeDarkColor": "darkPurple",
+    "graphNodeLightColor": [
+      52,
+      41,
+      79
+    ],
+    "graphNodeOutlineColor": "grey",
+    "trueBranchColor": "seafoamGreen",
+    "falseBranchColor": "brightRed",
+    "unconditionalBranchColor": "functionCyan",
+    "altTrueBranchColor": "variablePink",
+    "altFalseBranchColor": "stringOrange",
+    "altUnconditionalBranchColor": "keywordYellow",
+    "tokenHighlightColor": [
+      "+",
+      "background",
+      "variablePink"
+    ],
+    "instructionHighlightColor": [
+      "+",
+      "background",
+      "darkPurple"
+    ],
+    "relatedInstructionHighlightColor": [
+      "~",
+      "background",
+      "seafoamGreen",
+      100
+    ],
+    "featureMapBaseColor": "background",
+    "featureMapNavLineColor": "white",
+    "featureMapNavHighlightColor": "variablePink",
+    "featureMapDataVariableColor": "constantOrange",
+    "featureMapAsciiStringColor": "stringOrange",
+    "featureMapUnicodeStringColor": "variablePink",
+    "featureMapFunctionColor": "functionCyan",
+    "featureMapImportColor": "seafoamGreen",
+    "featureMapExternColor": "keywordYellow",
+    "featureMapLibraryColor": "lightPurple",
+    "sidebarBackgroundColor": "darkPurple",
+    "sidebarInactiveIconColor": "commentPurple",
+    "sidebarActiveIconColor": "white",
+    "sidebarHeaderBackgroundColor": "background",
+    "sidebarHeaderTextColor": "white",
+    "sidebarWidgetBackgroundColor": "darkPurple",
+    "miniGraphOverlayColor": [
+      "~",
+      "background",
+      "white",
+      100
+    ],
+    "scriptConsoleOutputColor": "white",
+    "scriptConsoleWarningColor": "keywordYellow",
+    "scriptConsoleErrorColor": "brightRed",
+    "scriptConsoleEchoColor": "seafoamGreen",
+    "activePaneBackgroundColor": "background",
+    "inactivePaneBackgroundColor": [
+      28,
+      25,
+      43
+    ],
+    "statusBarServerConnectedColor": "seafoamGreen",
+    "statusBarServerDisconnectedColor": "brightRed",
+    "statusBarServerWarningColor": "keywordYellow",
+    "statusBarProjectColor": "variablePink"
+  }
+}
